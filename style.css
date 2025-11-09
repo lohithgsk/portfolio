@@ -139,7 +139,16 @@ section h2, section h3 {
   display: flex;
   gap: 20px;
   margin-bottom: 22px;
-  align-items: flex-start; /* Keeps both sides aligned nicely */
+  padding-bottom: 18px; /* add spacing above separator */
+  align-items: flex-start;
+  border-bottom: 1px solid rgba(120, 120, 120, 0.35);
+}
+
+/* Remove line under the last publication */
+.pub-card:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .pub-tag {
@@ -183,43 +192,6 @@ section h2, section h3 {
   color: #003366;
   text-decoration: underline;
 }
-
-/* RESPONSIVE: COLLAPSE SIDEBAR */
-@media (max-width: 850px) {
-
-  .sidebar {
-    position: static;
-    transform: none;
-    width: 100%;
-    margin-bottom: 20px;
-    top: auto;
-  }
-
-  .sidebar img {
-    width: 160px;
-    height: 160px;
-  }
-
-  .layout {
-    flex-direction: column;
-    padding-top: 110px;
-    gap: 0;
-  }
-
-  .main {
-    margin-left: 0;
-    max-width: 100%;
-    height: auto;
-    overflow-y: visible;
-  }
-
-  .top-subnav {
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 15px 0;
-  }
-}
-
 
 /* EXPERIENCE WITH LOGO */
 .exp-card {
@@ -274,12 +246,101 @@ section h2, section h3 {
   margin-bottom: 6px;
 }
 
-/* MOBILE: Stack logo above text */
+/* RESPONSIVE: CLEAN MOBILE LAYOUT */
 @media (max-width: 850px) {
+
+  /* Make navbar comfortable */
+  .top-subnav {
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 12px 0;
+    font-size: 16px;
+  }
+
+  /* Stack layout vertically */
+  .layout {
+    flex-direction: column;
+    padding-top: 100px; /* leave room for navbar */
+    gap: 0;
+    margin: 0 16px;
+  }
+
+  /* Sidebar moves to top and becomes centered */
+  .sidebar {
+    position: relative;
+    left: 0;
+    transform: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 28px;
+    top: 0;
+  }
+
+  .sidebar img {
+    width: 150px;
+    height: 170px;
+    margin: 0 auto 14px auto;
+  }
+
+  .sidebar a {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  /* Main content takes full width */
+  .main {
+    margin-left: 0;
+    max-width: 100%;
+    padding: 0 4px 60px 4px;
+    height: auto;
+    overflow-y: visible;
+  }
+
+  /* Publications layout adjusts for space */
+  .pub-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .pub-tag {
+    width: 90px;
+    height: 70px;
+    margin-bottom: 10px;
+  }
+
+  /* Experience — full stacked layout with spacing */
   .exp-card {
     flex-direction: column;
+    gap: 10px;
+    padding-bottom: 20px;
   }
+
   .exp-logo {
-    margin-bottom: 8px;
+    width: 48px;
+    height: 48px;
+    margin-bottom: 4px;
+  }
+
+  .exp-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .exp-title {
+    font-size: 18px;
+    margin-bottom: 2px;
+  }
+
+  .exp-dates {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+
+  .exp-role {
+    margin-top: 4px;
+  }
+
+  .exp-details {
+    padding-left: 16px;
   }
 }
