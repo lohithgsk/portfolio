@@ -16,7 +16,7 @@ function loadContent(section) {
         <h3>Experience</h3>
 
             <div class="exp-card">
-            <img class="exp-logo" src="samsung.png" alt="Blue River Logo">
+            <img class="exp-logo" src="pictures/samsung-logo.png" alt="Blue River Logo">
             <div class="exp-body">
             <div class="exp-header">
                 <div class="exp-title">Samsung R&D Institute India-Bangalore</div>
@@ -32,7 +32,7 @@ function loadContent(section) {
             </div>
 
             <div class="exp-card">
-            <img class="exp-logo" src="fidelity-investments-logo-3.png" alt="Blue River Logo">
+            <img class="exp-logo" src="pictures/fidelity-investments-logo.png" alt="Blue River Logo">
             <div class="exp-body">
             <div class="exp-header">
                 <div class="exp-title">Fidelity Investments</div>
