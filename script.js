@@ -25,7 +25,7 @@ function loadContent(section) {
             <div class="exp-role">Research Intern</div>
             <ul class="exp-details">
                 <li>Working on Physics-Informed Neural Networks (PINNs) for data-driven modeling and analysis of complex 
-                turbulent flows.</li>
+                turbulent flows, with <a href="https://scholar.google.com/citations?user=98htjP4AAAAJ&hl=en" target="_blank">Prof. Rajesh Ranjan</a></li>
             </div>
             </div>
 
