@@ -16,11 +16,25 @@ function loadContent(section) {
         <h3>Experience</h3>
 
             <div class="exp-card">
+            <img class="exp-logo" src="pictures/fidelity-investments-logo.png" alt="Fidelity Investments Logo">
+            <div class="exp-body">
+            <div class="exp-header">
+                <div class="exp-title">Fidelity Investments</div>
+                <div class="exp-dates">January 2025 - Present</div>
+            </div>
+            <div class="exp-role">Software Development Engineer Intern</div>
+            <ul class="exp-details">
+                <li>Working with the transmissions in EC2 rehydration automation</li>
+            </ul>
+            </div>
+            </div>
+
+            <div class="exp-card">
             <img class="exp-logo" src="pictures/iitk.png" alt="IITK Logo">
             <div class="exp-body">
             <div class="exp-header">
                 <div class="exp-title">Indian Institute of Technology, Kanpur</div>
-                <div class="exp-dates">December 2025</div>
+                <div class="exp-dates">December 2025 - January 2025</div>
             </div>
             <div class="exp-role">Research Intern</div>
             <ul class="exp-details">
