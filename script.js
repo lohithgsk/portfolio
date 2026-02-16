@@ -24,7 +24,7 @@ function loadContent(section) {
             </div>
             <div class="exp-role">Software Development Engineer Intern</div>
             <ul class="exp-details">
-                <li>Working with the transmissions in EC2 rehydration automation</li>
+                <li>Working with the transmissions team in EC2 rehydration automation</li>
             </ul>
             </div>
             </div>
