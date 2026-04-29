@@ -24,7 +24,7 @@ function loadContent(section) {
             </div>
             <div class="exp-role">Software Development Engineer Intern</div>
             <ul class="exp-details">
-                <li>Working with the transmissions team in EC2 rehydration automation</li>
+                <li>Currently contributing to EC2 Rehydration automation initiatives to improve recovery efficiency and reduce manual intervention. Additionally, developing an SLA monitoring dashboard using Snowflake to enable real-time visibility, performance tracking, and proactive decision-making across transmission workflows.</li>
             </ul>
             </div>
             </div>
@@ -34,7 +34,7 @@ function loadContent(section) {
             <div class="exp-body">
             <div class="exp-header">
                 <div class="exp-title">Indian Institute of Technology, Kanpur</div>
-                <div class="exp-dates">December 2025 - January 2025</div>
+                <div class="exp-dates">December 2025 - January 2026</div>
             </div>
             <div class="exp-role">Research Intern</div>
             <ul class="exp-details">
