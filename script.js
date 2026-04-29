@@ -20,7 +20,7 @@ function loadContent(section) {
             <div class="exp-body">
             <div class="exp-header">
                 <div class="exp-title">Fidelity Investments</div>
-                <div class="exp-dates">January 2025 - Present</div>
+                <div class="exp-dates">January 2026 - Present</div>
             </div>
             <div class="exp-role">Software Development Engineer Intern</div>
             <ul class="exp-details">
