@@ -9,12 +9,25 @@
   <script src="script.js" defer></script>
 </head>
 
-<body>
+<body class="dark">
 
   <!-- CENTERED NAV -->
   <nav class="top-subnav">
-    <a onclick="loadContent('about')">About Me</a>
-    <a onclick="loadContent('publications')">Publications</a>
+    <div class="nav-inner">
+      <div class="nav-links">
+        <a onclick="loadContent('about')">About Me</a>
+        <a onclick="loadContent('cv')">CV</a>
+        <a onclick="loadContent('publications')">Publications</a>
+      </div>
+
+      <label class="theme-switch" aria-label="Toggle light and dark mode">
+        <input type="checkbox" id="theme-checkbox" onchange="toggleTheme()">
+        <span class="slider">
+          <svg class="theme-icon icon-sun" viewBox="0 0 24 24"><path fill="currentColor" d="M12 4.5a1 1 0 0 1-1-1V2a1 1 0 1 1 2 0v1.5a1 1 0 0 1-1 1zm0 15a1 1 0 0 1 1 1V22a1 1 0 1 1-2 0v-1.5a1 1 0 0 1 1-1zM4.5 12a1 1 0 0 1-1 1H2a1 1 0 1 1 0-2h1.5a1 1 0 0 1 1 1zm17.5 0a1 1 0 0 1-1 1h-1.5a1 1 0 1 1 0-2H21a1 1 0 0 1 1 1zM6.34 6.34a1 1 0 0 1-1.42 0L3.87 5.29a1 1 0 1 1 1.41-1.41l1.06 1.05a1 1 0 0 1 0 1.41zm12.73 12.73a1 1 0 0 1-1.42 0l-1.05-1.06a1 1 0 0 1 1.41-1.41l1.06 1.05a1 1 0 0 1 0 1.42zM6.34 17.66a1 1 0 0 1 0 1.42l-1.06 1.05a1 1 0 1 1-1.41-1.41l1.05-1.06a1 1 0 0 1 1.42 0zM19.07 4.93a1 1 0 0 1 0 1.41l-1.06 1.06a1 1 0 1 1-1.41-1.42l1.05-1.05a1 1 0 0 1 1.42 0zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10z"/></svg>
+          <svg class="theme-icon icon-moon" viewBox="0 0 24 24"><path fill="currentColor" d="M21.5 14.5A9 9 0 1 1 9.5 2.5a1 1 0 0 1 1.1 1.6A7 7 0 1 0 19.9 13.4a1 1 0 0 1 1.6 1.1z"/></svg>
+        </span>
+      </label>
+    </div>
   </nav>
 
   <!-- CENTERED LAYOUT -->
@@ -23,8 +36,8 @@
     <!-- LEFT SIDEBAR -->
     <div class="sidebar">
       <img src="pictures/myphoto.jpg" alt="Profile Photo">
-      <div class="name">Lohith Senthilkumar</div>
-      <div class="subtitle">CS Undergrad @ PSG College of Technology</div>
+      <div class="name">Lohith Senthil Kumar</div>
+      <div class="subtitle">MS CS @ North Carolina State University</div>
 
     <a href="https://scholar.google.com/citations?user=zuPfiJYAAAAJ&hl=en&authuser=1" target="_blank">
       <svg class="icon-svg" viewBox="0 0 24 24"><path fill="currentColor" d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/></svg>
@@ -55,6 +68,10 @@
     </div>
 
   </div>
+
+  <footer class="site-footer">
+    &copy; 2026 Lohith Senthil Kumar. All rights reserved.
+  </footer>
 
 </body>
 </html>

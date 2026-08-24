@@ -5,46 +5,68 @@ function loadContent(section) {
     about: `
         <h3>About Me</h3>
         <p>
-            Hi there! I am Lohith. <br>
-            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;I'm currently a Final Year Computer Science undergraduate student at <a   href="https://www.psgtech.edu/" target="_blank">PSG College of Technology</a> with a deep interest in applied artificial 
-            intelligence in specialized domains. My current work focuses on building privacy-preserving AI pipelines, particularly 
-            how we can train and deploy models on sensitive data while ensuring confidentiality, reliability, and trust. I'm 
-            especially excited about areas like homomorphic encryption, federated learning, and real-vs-synthetic signal analysis, 
-            where theory meets practical, real-world constraints.
-        </p>
-        
-        <h3>Experience</h3>
+            Hi there! I'm Lohith, a Master's student at <a href="https://www.ncsu.edu/" target="_blank">North Carolina State University</a>. 
+            I enjoy building things with AI and, more importantly, understanding how they work when they are put into the real world. Before starting my Master's, 
+            I interned at <a href="https://www.fidelity.com/" target="_blank">Fidelity Investments</a> and <a href="https://www.fidelity.com/" target="_blank">Samsung R&D India</a>, where I got to work on real-world engineering and AI problems. Those experiences made me appreciate the 
+            difference between getting something to work in a prototype and building something that is actually useful, reliable, and practical.
+            <br><br>
+            I'm especially interested in problems where AI meets systems, security, and privacy. I like digging into how things work, experimenting with different ideas, 
+            and figuring out how to turn them into something useful. 
 
+        </p>
+
+        <h3>Research Interests</h3>
+            My research interests lie at the intersection of deep learning, systems, and cybersecurity. I'm particularly interested in using deep learning to solve scientific
+            and engineering problems, including Physics-Informed Neural Networks (PINNs). I developed <a href="https://github.com/Aeroscience-Computations-Analysis-Lab/underPINN" target="_blank">underPINN</a>, a framework for 
+            building and training PINNs, which sparked my 
+            interest in scientific machine learning and the intersection of neural networks with numerical methods. 
+            <br><br>
+
+            I'm also interested in building secure and privacy-preserving AI systems, particularly for sensitive data. This includes exploring homomorphic encryption, 
+            federated learning, and confidential machine learning.
+        `,
+
+        cv: `
+        <h2>Experience</h2>
             <div class="exp-card">
-            <img class="exp-logo" src="pictures/fidelity-investments-logo.png" alt="Fidelity Investments Logo">
+            <img class="exp-logo logo-light" src="pictures/fidelity-investments-logo.png" alt="Fidelity Investments Logo">
+            <img class="exp-logo logo-dark" src="pictures/fidelity-investments-logo-dark.png" alt="Fidelity Investments Logo">
             <div class="exp-body">
             <div class="exp-header">
                 <div class="exp-title">Fidelity Investments</div>
-                <div class="exp-dates">January 2026 - Present</div>
+                <div class="exp-dates">Jan 2026 - June 2026</div>
             </div>
             <div class="exp-role">Software Development Engineer Intern</div>
             <ul class="exp-details">
-                <li>Currently contributing to EC2 Rehydration automation initiatives to improve recovery efficiency and reduce manual intervention. Additionally, developing an SLA monitoring dashboard using Snowflake to enable real-time visibility, performance tracking, and proactive decision-making across transmission workflows.</li>
+                <li>Built an Agentic AI system to trace logs across complex data pipelines, identify failure points, and accelerate root cause analysis. 
+                Also developed an AI-powered pull request review framework using specialized agents for triage, logic validation, and security analysis of GitHub code changes.</li>
+                <li>Automated EC2 rehydration workflows to improve recovery efficiency and reduce manual intervention. Additionally, developed a Snowflake-based SLA monitoring dashboard 
+                providing real-time visibility into transmission workflows, enabling performance tracking and proactive operational decision-making</li>
             </ul>
             </div>
             </div>
 
             <div class="exp-card">
-            <img class="exp-logo" src="pictures/iitk.png" alt="IITK Logo">
+            <img class="exp-logo logo-light" src="pictures/iitk.png" alt="IITK Logo">
+            <img class="exp-logo logo-dark" src="pictures/iitk-dark.png" alt="IITK Logo">
             <div class="exp-body">
             <div class="exp-header">
                 <div class="exp-title">Indian Institute of Technology, Kanpur</div>
-                <div class="exp-dates">December 2025 - January 2026</div>
+                <div class="exp-dates">December 2025</div>
             </div>
             <div class="exp-role">Research Intern</div>
             <ul class="exp-details">
-                <li>Working on Physics-Informed Neural Networks (PINNs) for data-driven modeling and analysis of complex 
-                turbulent flows, with <a href="https://scholar.google.com/citations?user=98htjP4AAAAJ&hl=en" target="_blank">Prof. Rajesh Ranjan</a></li>
+                <li> Worked with <a href="https://scholar.google.com/citations?user=98htjP4AAAAJ&hl=en" target="_blank">Prof. Rajesh Ranjan</a> in developing underPINN. 
+                A modular JAX-based framework for data-driven modeling and analysis of complex turbulent flows,
+                enabling scalable Physics-Informed Neural Networks (PINNs) with support for PDE-constrained learning, domain decomposition, attention mechanisms, 
+                and performance-optimized training. </li>
+            </ul>
             </div>
             </div>
 
             <div class="exp-card">
-            <img class="exp-logo" src="pictures/samsung-logo.png" alt="Samsung Logo">
+            <img class="exp-logo logo-light" src="pictures/samsung-logo.png" alt="Samsung Logo">
+            <img class="exp-logo logo-dark" src="pictures/samsung-logo-dark.png" alt="Samsung Logo">
             <div class="exp-body">
             <div class="exp-header">
                 <div class="exp-title">Samsung R&D Institute India-Bangalore</div>
@@ -60,20 +82,22 @@ function loadContent(section) {
             </div>
 
             <div class="exp-card">
-            <img class="exp-logo" src="pictures/fidelity-investments-logo.png" alt="Fidelity Investments Logo">
+            <img class="exp-logo logo-light" src="pictures/fidelity-investments-logo.png" alt="Fidelity Investments Logo">
+            <img class="exp-logo logo-dark" src="pictures/fidelity-investments-logo-dark.png" alt="Fidelity Investments Logo">
             <div class="exp-body">
             <div class="exp-header">
                 <div class="exp-title">Fidelity Investments</div>
                 <div class="exp-dates">May 2025 - July 2025</div>
             </div>
-            <div class="exp-role">Software Development Engineer Intern</div>
+            <div class="exp-role">Software Development Engineer Intern<br>Summer 2025
+            </div>
+            
             <ul class="exp-details">
                 <li>Involved in developing a proof of concept that integrates optimized Large Language Models (LLMs) with a 
                 Retrieval-Augmented Generation (RAG) pipeline to extract actionable insights from unstructured data.</li>
             </ul>
             </div>
         </div>
-
         `,
 
         publications: `
@@ -175,6 +199,24 @@ function loadContent(section) {
   content.innerHTML = sections[section];
 }
 
-window.onload = () => loadContent('about');
+/* THEME HANDLING */
+function toggleTheme() {
+  const isDark = document.body.classList.toggle('dark');
+  localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  const checkbox = document.getElementById('theme-checkbox');
+  if (checkbox) checkbox.checked = !isDark;
+}
 
+function initTheme() {
+  const saved = localStorage.getItem('theme');
+  // Dark mode is the default unless the user has explicitly chosen light.
+  const isDark = saved ? saved === 'dark' : true;
+  document.body.classList.toggle('dark', isDark);
+  const checkbox = document.getElementById('theme-checkbox');
+  if (checkbox) checkbox.checked = !isDark;
+}
 
+window.onload = () => {
+  initTheme();
+  loadContent('about');
+};
